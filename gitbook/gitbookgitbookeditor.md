@@ -118,11 +118,17 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 ## 发布
 
-可以先在本地预览,http://localhost:4000
+可以先在本地预览,[http://localhost:4000](http://localhost:4000)
 
 > gitbook install
 >
 > gitbook serve
+
+
+
+执行以下命令构建WebSite
+
+> gitbook build
 
 
 
