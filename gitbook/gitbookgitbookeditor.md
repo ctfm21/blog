@@ -30,7 +30,7 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 > gitbook init
 
-* 在该目录下新建book.json文件。 
+* 在该目录下新建book.json文件。  该文件是一个配置文件。 可以配置插件、主题等
 
 
 
