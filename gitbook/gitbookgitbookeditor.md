@@ -41,7 +41,7 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 >
 > "description" : "blog of liuyixin",
 >
-> "plugins": \[
+> "plugins": [
 >
 >     "-search",
 >
