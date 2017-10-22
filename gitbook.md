@@ -1,6 +1,6 @@
 # GitBook结构
 
-![](blob:file:///214a65ac-462a-4af3-98c3-6698ce1909cb)
+![](/assets/github结构.png)
 
 按我的理解分成的4部分。
 
@@ -8,7 +8,9 @@
 
 2：编辑器。 我们需要对GitBook的项目文件进行编辑。 如我们新建一篇文章，给文章输入一个标题，插入一些文字和图片。这些操作最好由可视化的编辑器来完成。 如果是本地，可以使用GitBook Editor来编辑；在线可以使用登录到GitBook.com在线操作。
 
-3：构建工具。使用构建工具将GItBook Project输出成我们想要的格式。如一个Web站点，或者是PDF等。![](blob:file:///6542bf78-df6b-46ab-81e0-3309e789597c)
+![](/assets/gitbookeditor.png)
+
+3：构建工具。使用构建工具将GItBook Project输出成我们想要的格式。如一个Web站点，或者是PDF等。
 
 # 相关参考
 

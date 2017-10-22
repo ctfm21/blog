@@ -124,8 +124,6 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 >
 > gitbook serve
 
-
-
 执行以下命令构建WebSite
 
 > gitbook build
