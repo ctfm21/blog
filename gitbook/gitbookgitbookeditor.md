@@ -110,4 +110,9 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 百度网盘\(7.0.12\)： [http://pan.baidu.com/s/1pKJaCTd](http://pan.baidu.com/s/1pKJaCTd)
 
-* 
+* 打开GitBookEditor =&gt;Open=&gt; 选择github目录
+
+* 接下来就是编辑了
+
+
+
