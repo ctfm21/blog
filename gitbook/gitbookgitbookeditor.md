@@ -92,4 +92,11 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 >
 > }
 
-* 
+* 每次编辑完plugins后，需要执行
+
+> gitbook install
+
+
+
+
+
