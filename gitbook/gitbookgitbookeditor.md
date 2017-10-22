@@ -96,11 +96,9 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 > gitbook install
 
-* 执行“gitbook serve”，浏览器中 http://localhost:4000 预览
+* 执行“gitbook serve”，浏览器中 [http://localhost:4000](http://localhost:4000) 预览
 
 > gitbook serve
 
-
-
-
+## 
 
