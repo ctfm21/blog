@@ -116,6 +116,8 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 * 编辑完成后，可以直接在Editor里将修改同步到GitHub，也可以到目录中通过Git命令同步到GitHub。
 
+## 发布
+
 
 
 
