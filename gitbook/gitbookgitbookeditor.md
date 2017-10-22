@@ -20,7 +20,7 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 * 安装GitBook
 
-> npm install gitbook-cli
+> npm install -g gitbook-cli
 >
 > gitbook -V   //安装成功，执行该命令会显示gitbook版本
 
