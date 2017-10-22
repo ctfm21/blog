@@ -1,6 +1,28 @@
 {
+	"language" : "zh-hans",
+	"description" : "blog of liuyixin",
     "plugins": [
-        "theme-faq",
-		"-lunr"
-    ]
+        "-search",
+		"-lunr",
+		"disqus",
+		"search-pro",
+		"github" 
+    ],
+	"links" : {
+		"sidebar" : {
+			"Home" : "http://www.liuyx.net"
+		}
+	},
+	"pluginsConfig": {
+		"disqus": {
+			"shortName": "gitbookuse"
+		},
+		"search-pro": {
+			"cutWordLib": "nodejieba",
+			"defineWord" : ["Gitbook Use"]
+		},
+		"github": {
+			"url": "https://github.com/yjjqrqqq/blog"
+		}
+	}
 }
