@@ -112,7 +112,9 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 * 打开GitBookEditor =&gt;Open=&gt; 选择github目录
 
-* 接下来就是编辑了
+* 接下来就是编辑了， 很Easy。
+
+* 编辑完成后，可以直接在Editor里将修改同步到GitHub，也可以到目录中通过Git命令同步到GitHub。
 
 
 
