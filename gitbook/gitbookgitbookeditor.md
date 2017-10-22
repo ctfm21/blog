@@ -1,4 +1,4 @@
-* > 创建 一个GitHub空项目。
+## 创建 一个GitHub空项目。
 
 这里项目名取为blog；并通过git工具clone到本地。
 
