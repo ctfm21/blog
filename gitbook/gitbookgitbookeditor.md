@@ -1,4 +1,4 @@
-* 创建 一个GitHub空项目。
+创建 一个GitHub空项目。
 
 这里项目名取为blog；并通过git工具clone到本地。
 
@@ -36,59 +36,60 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 > {
 >
-> 	"language" : "zh-hans",
+> ```
+> "language" : "zh-hans",
 >
-> 	"description" : "blog of liuyixin",
+> "description" : "blog of liuyixin",
 >
->     "plugins": \[
+> "plugins": \[
 >
->         "-search",
+>     "-search",
 >
-> 		"-lunr",
+>     "-lunr",
 >
-> 		"disqus",
+>     "disqus",
 >
-> 		"search-pro",
+>     "search-pro",
 >
-> 		"github" 
+>     "github" 
 >
->     \],
+> \],
 >
-> 	"links" : {
+> "links" : {
 >
-> 		"sidebar" : {
+>     "sidebar" : {
 >
-> 			"Home" : "http://www.liuyx.net"
+>         "Home" : "http://www.liuyx.net"
 >
-> 		}
+>     }
 >
-> 	},
+> },
 >
-> 	"pluginsConfig": {
+> "pluginsConfig": {
 >
-> 		"disqus": {
+>     "disqus": {
 >
-> 			"shortName": "gitbookuse"
+>         "shortName": "gitbookuse"
 >
-> 		},
+>     },
 >
-> 		"search-pro": {
+>     "search-pro": {
 >
-> 			"cutWordLib": "nodejieba",
+>         "cutWordLib": "nodejieba",
 >
-> 			"defineWord" : \["Gitbook Use"\]
+>         "defineWord" : \["Gitbook Use"\]
 >
-> 		},
+>     },
 >
-> 		"github": {
+>     "github": {
 >
-> 			"url": "https://github.com/yjjqrqqq/blog"
+>         "url": "https://github.com/yjjqrqqq/blog"
 >
-> 		}
+>     }
 >
-> 	}
+> }
+> ```
 >
 > }
 
-
-
+* 
