@@ -124,7 +124,7 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 >
 > gitbook serve
 
-执行以下命令构建WebSite
+执行以下命令构建WebSite，默认目录在 \_book中。 然后将这个静态站发布即可。
 
 > gitbook build
 
