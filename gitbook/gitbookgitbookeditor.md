@@ -102,5 +102,5 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 ## 使用GitBook Editor编辑
 
-
+使用GitBookEditor可以
 
