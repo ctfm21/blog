@@ -34,8 +34,61 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 具体的可以参照：[http://blog.csdn.net/twh\_east/article/details/54097903](http://blog.csdn.net/twh_east/article/details/54097903)
 
-  
-
+> {
+>
+> 	"language" : "zh-hans",
+>
+> 	"description" : "blog of liuyixin",
+>
+>     "plugins": \[
+>
+>         "-search",
+>
+> 		"-lunr",
+>
+> 		"disqus",
+>
+> 		"search-pro",
+>
+> 		"github" 
+>
+>     \],
+>
+> 	"links" : {
+>
+> 		"sidebar" : {
+>
+> 			"Home" : "http://www.liuyx.net"
+>
+> 		}
+>
+> 	},
+>
+> 	"pluginsConfig": {
+>
+> 		"disqus": {
+>
+> 			"shortName": "gitbookuse"
+>
+> 		},
+>
+> 		"search-pro": {
+>
+> 			"cutWordLib": "nodejieba",
+>
+> 			"defineWord" : \["Gitbook Use"\]
+>
+> 		},
+>
+> 		"github": {
+>
+> 			"url": "https://github.com/yjjqrqqq/blog"
+>
+> 		}
+>
+> 	}
+>
+> }
 
 
 
