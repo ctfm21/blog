@@ -1,4 +1,4 @@
-* 创建 一个GitHub空项目。
+* > 创建 一个GitHub空项目。
 
 这里项目名取为blog；并通过git工具clone到本地。
 
@@ -118,7 +118,11 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 ## 发布
 
-可以先在本地预览
+可以先在本地预览,http://localhost:4000
+
+> gitbook install
+>
+> gitbook serve
 
 
 
