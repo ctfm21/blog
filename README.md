@@ -31,10 +31,7 @@ WordPress使用的时间最长，差不多两年多。比较主流的博客平�
 
 1. 博客原始的文件可以存储在GitHub上，个人博客本来就是出于分享目的的。 放在GitHub上至少不用担心数据丢失了。 还有一个，程序员对GitHub都抱有天然的好感~~~
 2. GitBook，可以输入Web Site、PDF、epub等格式。 后期的扩展型也好。
-
-
+3. 编辑方式可以使用，GitHub、GitBookEditor、GitBookOnline。
 
 做一个尝试吧~~~
-
-
 
