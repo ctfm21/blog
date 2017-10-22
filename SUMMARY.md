@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [GitBook](gitbook.md)
+* [使用GitBook、GitHub、GitBookEditor构建自己的博客](gitbook.md)
 
