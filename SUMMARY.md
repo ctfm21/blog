@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [GitBook](gitbook.md)
-  * [实践一  使用GitBook、GitBookEditor构建自己的静态站点](gitbook/gitbookgitbookeditor.md)
+  * [实践：  使用GitHub、GitBook、GitBookEditor搭建站点](gitbook/gitbookgitbookeditor.md)
 
