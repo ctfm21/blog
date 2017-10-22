@@ -96,5 +96,7 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 > gitbook install
 
+* 执行“gitbook serve”
+
 
 
