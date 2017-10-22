@@ -108,7 +108,7 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 官网下载：[http://downloads.editor.gitbook.com/download/windows](http://downloads.editor.gitbook.com/download/windows?user=yjjqrqqq)
 
-百度网盘：
+百度网盘\(7.0.12\)： http://pan.baidu.com/s/1pKJaCTd
 
 
 
