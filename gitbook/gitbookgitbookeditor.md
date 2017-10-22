@@ -24,11 +24,13 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 >
 > gitbook -V   //安装成功，执行该命令会显示gitbook版本
 
-
-
 ## 构建
 
-进入本地的githup项目目录
+* 进入本地的githup项目目录，执行以下命令初使化GitBook项目。
+
+> gitbook init
+
+
 
 
 
