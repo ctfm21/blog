@@ -1,4 +1,4 @@
-# GitBook结构
+# [GitBook](/gitbook.md)GitBook结构
 
 ![](/assets/github结构.png)
 
