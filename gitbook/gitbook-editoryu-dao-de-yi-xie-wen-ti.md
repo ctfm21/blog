@@ -8,9 +8,9 @@
 
 ![](/assets/gitbook/maoji.png)
 
-
-
 #  {#1}
+
+* search-pro 手机中输入中文无法查询
 
 
 
