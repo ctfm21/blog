@@ -70,3 +70,35 @@ centos 6使用iptables配置转发，网上很多仍然在centos7中装iptables�
 
 ping 10.8.0.1 成功，但是无法访问内网资源。 使用 route print 发现是路由没有 push过来，纠结了很久没有解决（网上说以管理员方式运行，我有哪么傻？  肯定不行啊）。  晚上回到家后，用家里的win8和win10测试，竟然一路OK，路由也push过来了！！！ 明天回公司再看下吧
 
+
+
+# 附 server.conf
+
+> port 8089
+>
+> proto tcp 
+>
+> dev tun
+>
+> ca keys/ca.crt
+>
+> cert keys/openvpn.xxx.com.crt
+>
+> key keys/openvpn.xxx.com.key  \# This file should be kept secret
+>
+> dh keys/dh2048.pem
+>
+> server 10.8.0.0 255.255.255.0
+>
+> ifconfig-pool-persist ipp.txt
+>
+> push "route 10.8.0.0 255.255.0.0"
+>
+> push "route 100.114.25.139 255.255.255.255"
+>
+> push "dhcp-option DNS 8.8.8.8"
+>
+> \#explicit-exit-notify 1
+
+
+
