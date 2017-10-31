@@ -4,5 +4,17 @@
 
 ---
 
+## 安装 
+
+ubuntu
+
+> apt-get install openvpn
+
+centos
+
+> yum install openvpn
+
+
+
 
 
