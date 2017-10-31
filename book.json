@@ -1,12 +1,14 @@
 {
 	"language" : "zh-hans",
 	"description" : "blog of liuyixin",
+	"title":"blog of liuyixin",
     "plugins": [
         "-search",
 		"-lunr",
 		"disqus",
 		"search-pro",
-		"github" 
+		"github" ,
+		"theme-opendocs"
     ],
 	"links" : {
 		"sidebar" : {
