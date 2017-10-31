@@ -1,6 +1,6 @@
 # OpenVPN安装步骤
 
-15年记录的，有些久！ 其中一些下载链接也无法使用了，仅仅做个记录。 
+15年记录的，有些久！ 其中一些下载链接也无法使用了，仅仅做个记录。  最近在CentOS上部署了，[一些问题记录](/daily/centos7-install-openvpn-server-proplems.md)
 
 ---
 
