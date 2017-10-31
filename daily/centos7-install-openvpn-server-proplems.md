@@ -6,17 +6,37 @@
 
 [安装教程](/daily/openvpn.md)  网上一搜一大堆，这是很久以前自己记录的。
 
+
+
 着重记录一下之前相比之前遇到的一些新问题:
+
+* 取代之前的iptables
+
+centos 6使用iptables配置转发，网上很多仍然在centos7中装iptables。 但是这里不推荐，CentOS 7中如下：
+
+> firewall-cmd --permanent --add-service openvpn
+>
+> firewall-cmd --permanent --zone=trusted --add-interface=tun0
+>
+> firewall-cmd --permanent --zone=trusted --add-masquerade
+>
+> DEV=$\(ip route get 8.8.8.8 \| awk 'NR==1 {print $\(NF-2\)}'\)
+>
+> firewall-cmd --permanent --direct --passthrough ipv4 -t nat -A POSTROUTING -s  10.8.0.0/24 -o $DEV -j MASQUERADE
+>
+> firewall-cmd --reload
+
+参考 ：[https://panovski.me/install-and-configure-openvpn-on-a-centos-7/](https://panovski.me/install-and-configure-openvpn-on-a-centos-7/)
 
 
 
 * 服务
 
-> systemctl start openvpn@server  //服务启动 一开始使用systemctl start openvpn报错了
+> systemctl start openvpn@server  
+>   //服务启动 一开始使用systemctl start openvpn报错了
 >
-> systemctl status openvpn@server  //若服务启动失败，可以查看失败信息
-
-
+> systemctl status openvpn@server  
+>   //若服务启动失败，可以查看失败信息
 
 * 使用udp客户端连接使用
 
@@ -26,15 +46,13 @@
 >
 > ● openvpn@server.service - OpenVPN Robust And Highly Flexible Tunneling Application On server
 >
->    Loaded: loaded \(/usr/lib/systemd/system/openvpn@.service; enabled; vendor preset: disabled\)
+> Loaded: loaded \(/usr/lib/systemd/system/openvpn@.service; enabled; vendor preset: disabled\)
 >
->    Active: failed \(Result: exit-code\) since Tue 2017-10-31 21:55:00 CST; 2min 29s ago
+> Active: failed \(Result: exit-code\) since Tue 2017-10-31 21:55:00 CST; 2min 29s ago
 >
->   Process: 15682 ExecStart=/usr/sbin/openvpn --cd /etc/openvpn/ --config %i.conf \(code=exited, status=1/FAILURE\)
+> Process: 15682 ExecStart=/usr/sbin/openvpn --cd /etc/openvpn/ --config %i.conf \(code=exited, status=1/FAILURE\)
 >
->  Main PID: 15682 \(code=exited, status=1/FAILURE\)
->
->
+> Main PID: 15682 \(code=exited, status=1/FAILURE\)
 >
 > Oct 31 21:55:00 iZ23nzm9qhoZ systemd\[1\]: Starting OpenVPN Robust And Highly Flexible Tunneling Applicat...r...
 >
