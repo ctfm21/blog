@@ -64,6 +64,9 @@ centos 6使用iptables配置转发，网上很多仍然在centos7中装iptables�
 
 解决方法：将server.conf中的"explicit-exit-notify 1"注释。查看了下官方的说法，不推荐使用tcp方式，所以有个开关。
 
-* 
+* **Win10问题**
 
+公司机器上部署也连接成功。
+
+ping 10.8.0.1 成功，但是无法访问内网资源。 使用 route print 发现是路由没有 push过来，纠结了很久没有解决（网上说以管理员方式运行，我有哪么傻？  肯定不行啊）。  晚上回到家后，用家里的win8和win10测试，竟然一路OK，路由也push过来了！！！ 明天回公司再看下吧
 
