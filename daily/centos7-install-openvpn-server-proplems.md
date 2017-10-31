@@ -6,8 +6,6 @@
 
 [安装教程](/daily/openvpn.md)  网上一搜一大堆，这是很久以前自己记录的。
 
-
-
 着重记录一下之前相比之前遇到的一些新问题:
 
 * 取代之前的iptables
@@ -28,8 +26,6 @@ centos 6使用iptables配置转发，网上很多仍然在centos7中装iptables�
 
 参考 ：[https://panovski.me/install-and-configure-openvpn-on-a-centos-7/](https://panovski.me/install-and-configure-openvpn-on-a-centos-7/)
 
-
-
 * 服务
 
 > systemctl start openvpn@server  
@@ -40,7 +36,7 @@ centos 6使用iptables配置转发，网上很多仍然在centos7中装iptables�
 
 * 使用udp客户端连接使用
 
-真心不知道为何，换成tcp协议就行了。 直接将"proto udp"改成"proto tcp"后启动报错
+真心不知道为何（其实偷懒了），换成tcp协议就行了。 直接将"proto udp"改成"proto tcp"后启动报错
 
 > \[root@iZ23nzm9qhoZ openvpn\]\# systemctl status openvpn@server
 >
