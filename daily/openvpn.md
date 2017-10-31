@@ -1,6 +1,6 @@
 # OpenVPN安装步骤
 
-15年记录的，有些久！ 其中一些下载链接也无法使用了，仅仅做个记录。
+15年记录的，有些久！ 其中一些下载链接也无法使用了，仅仅做个记录。 
 
 ---
 
@@ -15,8 +15,6 @@ centos
 > yum install openvpn
 
 **easy-rsa**
-
-
 
 [http://swupdate.openvpn.org/community/releases/easy-rsa-2.2.0\_master.tar.gz](http://swupdate.openvpn.org/community/releases/easy-rsa-2.2.0_master.tar.gz)
 
@@ -138,9 +136,6 @@ NOTE: If you run ./clean-all, I will be doing a rm -rf on /etc/openvpn/keys
 # openvpn --genkey --secret /etc/openvpn/keys/ta.key
 ```
 
-  
-
-
 #### 3.6、编辑服务配置文件 {#id-搭建OpenVPN-3.6、编辑服务配置文件}
 
 ```
@@ -152,8 +147,6 @@ NOTE: If you run ./clean-all, I will be doing a rm -rf on /etc/openvpn/keys
 ;proto tcp
 proto tcp
 ```
-
-
 
 ```
 # 这里是重点，必须指定SSL/TLS root certificate (ca),
@@ -168,16 +161,10 @@ cert keys/openvpn.example.com.crt
 key keys/openvpn.example.com.key # This file should be kept secret
 ```
 
-
-
 ```
 # 指定Diffie hellman parameters.
 dh keys/dh1024.pem
 ```
-
-
-
-
 
 定位到tls-auth行，设置如下：
 
@@ -187,14 +174,10 @@ tls-auth ta.key 1
 )
 ```
 
-
-
 ```
 # 配置VPN使用的网段，OpenVPN会自动提供基于该网段的DHCP服务，但不能和任何一方的局域网段重复，保证唯一
 server 10.8.0.0 255.255.255.0
 ```
-
-
 
 加入以下脚本（这样设置后，就可以连内外网互联了）
 
@@ -202,8 +185,6 @@ push "route 10.8.0.0 255.255.255.0"
 push "redirect-gateway def1 bypass-dhcp bypass-dns"  
 push "dhcp-option DNS 8.8.8.8"  
 push "dhcp-option DNS 8.8.4.4"
-
-
 
 ```
 # 日志文件
@@ -219,8 +200,6 @@ PS：目录不存在时mkdir
 # service openvpn start
 ```
 
-
-
 ```
 # vim /etc/sysctl.conf
 ```
@@ -232,8 +211,6 @@ PS：目录不存在时mkdir
 ```
 # sysctl -p
 ```
-
-
 
 设置iptables（这一条至关重要，通过配置nat将vpn网段IP转发到server内网）
 
