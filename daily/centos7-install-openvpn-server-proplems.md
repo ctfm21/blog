@@ -72,11 +72,23 @@ ping 10.8.0.1 成功，但是无法访问内网资源。 使用 route print 发�
 
 
 
+> Wed Nov 01 10:32:53 2017 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1544', remote='link-mtu 1559'
+>
+> Wed Nov 01 10:32:53 2017 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+>
+> Wed Nov 01 10:32:53 2017 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+>
+> Wed Nov 01 10:32:53 2017 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+
+
+
+
+
 # 附 server.conf
 
 > port 8089
 >
-> proto tcp 
+> proto tcp
 >
 > dev tun
 >
