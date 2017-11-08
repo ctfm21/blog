@@ -7,4 +7,5 @@
 * [日常随笔](daily.md)
   * [OpenVPN安装](daily/openvpn.md)
   * [CentOS7安装OpenVPN Server遇到的一些问题](daily/centos7-install-openvpn-server-proplems.md)
+  * [Something about cross GW](daily/something-about-cross-gw.md)
 
