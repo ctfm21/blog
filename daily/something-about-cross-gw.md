@@ -26,5 +26,5 @@ _**2017/11/08**_
 
 ## 第二步在浏览器中配置Socket5代理。
 
-推荐使用Chrome +  SwitchyOmega 。 SwitchyOmega的前身是Proxy SwitchySharp（现在这个插件在Chrome里经常崩溃），
+推荐使用Chrome +  SwitchyOmega 。 SwitchyOmega的前身是Proxy SwitchySharp（现在这个插件在Chrome里经常崩溃），推荐的方式是一般情况下不打开代理 ，访问需要翻墙的软件时，直接点插件将域名加到代理列表中去即可。 好处就是，对于国内的一些资源 ，实在没必要走代理。
 
