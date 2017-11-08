@@ -24,11 +24,9 @@ _**2017/11/08**_
 
 > ssh -qTfnN -D IP:1080 -p 22 user@47.90.63.13
 
-
-
 ## 第二步在浏览器中配置Socket5代理。
 
-
+推荐使用Chrome +  SwitchyOmega 。 SwitchyOmega的前身是Proxy SwitchySharp（现在这个插件在Chrome里经常崩溃）
 
 
 
