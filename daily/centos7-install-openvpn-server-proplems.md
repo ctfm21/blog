@@ -1,4 +1,4 @@
-# CentOS7搭建OpenVPN遇到的一些问题
+1. # CentOS7搭建OpenVPN遇到的一些问题
 
 ---
 
@@ -98,11 +98,7 @@ ping 10.8.0.1 成功，但是无法访问内网资源。 使用 route print 发�
 >
 > \#explicit-exit-notify 1
 
-
-
 # IOS使用
 
-
-
-
+没有 没越狱的情况下，可以用一个海外的账号登录AppStore，下载一个OpenVPN的客户端。
 
