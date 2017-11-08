@@ -28,3 +28,9 @@ _**2017/11/08**_
 
 推荐使用Chrome +  SwitchyOmega 。 SwitchyOmega的前身是Proxy SwitchySharp（现在这个插件在Chrome里经常崩溃），推荐的方式是一般情况下不打开代理 ，访问需要翻墙的软件时，直接点插件将域名加到代理列表中去即可。 好处就是，对于国内的一些资源 ，实在没必要走代理。
 
+> SwitchyOmega 网盘地址： http://pan.baidu.com/s/1bpLciQz 密码：6dq9
+
+
+
+
+
