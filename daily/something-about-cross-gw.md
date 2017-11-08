@@ -14,5 +14,9 @@ _**2017/11/08**_
 
 # 步骤
 
+## 第一步建立Socket5通道
 
+如果是本地Windows或PC，通过XShell或Putty之类的SSH工具建立即可。\(参见以下设置，最后建立连接即可\)
+
+![](/assets/vpn/xshell_socket5)
 
