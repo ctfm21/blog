@@ -32,9 +32,7 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 * 在该目录下新建book.json文件。  该文件是一个配置文件。 可以配置插件、主题等。
 
-具体的可以参照：http://blog.csdn.net/zhangjk1993/article/details/50380403
-
-
+具体的可以参照：[http://blog.csdn.net/zhangjk1993/article/details/50380403](http://blog.csdn.net/zhangjk1993/article/details/50380403)
 
 > {
 >
@@ -110,7 +108,7 @@ GitBook基于NodeJS构建。 [https://nodejs.org/en/download/](https://nodejs.or
 
 官网下载：[http://downloads.editor.gitbook.com/download/windows](http://downloads.editor.gitbook.com/download/windows?user=yjjqrqqq)
 
-百度网盘\(7.0.12\)： [http://pan.baidu.com/s/1pKJaCTd](http://pan.baidu.com/s/1pKJaCTd)
+百度网盘\(7.0.12\)： http://pan.baidu.com/s/1b5UTRo 密码：z96d
 
 * 打开GitBookEditor =&gt;Open=&gt; 选择github目录
 
