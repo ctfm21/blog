@@ -34,3 +34,25 @@ IE、FireFox都支持Socket 5代理 ，这里推荐使用Chrome +  SwitchyOmega 
 
 ![](/assets/vpn/add_dynamic)
 
+## IOS
+
+需要一个在线可访问的pac文件，http://192.168.0.51/vpn/worker.pac  内容如下
+
+> ```
+> function FindProxyForURL(url, host)
+> ```
+>
+> ```
+> {
+>     if (isInNet(host, "192.168.0.0", "255.255.0.0"))
+>       return "DIRECT";
+>     return "SOCKS 192.168.0.51:7777";
+> }
+> ```
+
+
+
+
+
+
+
