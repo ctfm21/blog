@@ -70,10 +70,6 @@ centos 6使用iptables配置转发，网上很多仍然在centos7中装iptables�
 
 ping 10.8.0.1 成功，但是无法访问内网资源。 使用 route print 发现是路由没有 push过来，纠结了很久没有解决（网上说以管理员方式运行，我有哪么傻？  肯定不行啊）。  晚上回到家后，用家里的win8和win10测试，竟然一路OK，路由也push过来了！！！ 明天回公司再看下吧
 
-
-
-
-
 路由没push过来的问题解决了。 公司 机器OpenVPN GUI版本过低（openvpn-install-2.3.10-I601-x86\_64），升级到openvpn-install-2.4.4-I601\(别使用2.3的sample config，换成2.4.4的sample config\)就OK了。
 
 # 附 server.conf
