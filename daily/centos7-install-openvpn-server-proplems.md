@@ -8,6 +8,8 @@
 
 着重记录一下之前相比之前遇到的一些新问题:
 
+* _yum _install _epel _-release安装最新版的enpl的yum源。
+
 * 取代之前的iptables
 
 centos 6使用iptables配置转发，网上很多仍然在centos7中装iptables。 但是这里不推荐，CentOS 7中如下：
