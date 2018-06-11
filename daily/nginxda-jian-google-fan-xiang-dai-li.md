@@ -8,7 +8,19 @@ git clone [https://github.com/yaoweibin/ngx\_http\_substitutions\_filter\_module
 
 wget [http://mirrors.linuxeye.com/oneinstack/src/pcre-8.39.tar.gz](http://mirrors.linuxeye.com/oneinstack/src/pcre-8.39.tar.gz)
 
-wget http://mirrors.linuxeye.com/oneinstack/src/openssl-1.0.2j.tar.gz
+wget [http://mirrors.linuxeye.com/oneinstack/src/openssl-1.0.2j.tar.gz](http://mirrors.linuxeye.com/oneinstack/src/openssl-1.0.2j.tar.gz)
 
+\#
 
+\# 下载最新版 zlib
+
+\# zlib 官网:
+
+\# http://www.zlib.net/
+
+\#
+
+wget
+
+"http://zlib.net/zlib-1.2.8.tar.gz"
 
