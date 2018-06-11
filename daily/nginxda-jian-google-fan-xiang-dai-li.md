@@ -6,7 +6,9 @@ git clone [https://github.com/cuber/ngx\_http\_google\_filter\_module](https://g
 
 git clone [https://github.com/yaoweibin/ngx\_http\_substitutions\_filter\_module](https://github.com/yaoweibin/ngx_http_substitutions_filter_module)
 
-wget http://mirrors.linuxeye.com/oneinstack/src/pcre-8.39.tar.gz
+wget [http://mirrors.linuxeye.com/oneinstack/src/pcre-8.39.tar.gz](http://mirrors.linuxeye.com/oneinstack/src/pcre-8.39.tar.gz)
+
+wget http://mirrors.linuxeye.com/oneinstack/src/openssl-1.0.2j.tar.gz
 
 
 
