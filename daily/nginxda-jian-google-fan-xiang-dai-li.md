@@ -20,7 +20,25 @@ wget [http://mirrors.linuxeye.com/oneinstack/src/openssl-1.0.2j.tar.gz](http://m
 
 \#
 
- wget http://zlib.net/fossils/zlib-1.2.11.tar.gz
+wget [http://zlib.net/fossils/zlib-1.2.11.tar.gz](http://zlib.net/fossils/zlib-1.2.11.tar.gz)
+
+
+
+
+
+ --prefix=/opt/nginx\
+
+--with-pcre=../pcre-8.39 \
+
+  --with-openssl=../openssl-1.0.2j \
+
+  --with-zlib=../zlib-1.2.11 \
+
+  --with-http\_ssl\_module \
+
+  --add-module=../ngx\_http\_google\_filter\_module \
+
+  --add-module=../ngx\_http\_substitutions\_filter\_module
 
 
 
