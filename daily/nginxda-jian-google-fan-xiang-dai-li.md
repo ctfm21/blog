@@ -36,16 +36,11 @@ wget [http://zlib.net/fossils/zlib-1.2.11.tar.gz](http://zlib.net/fossils/zlib-1
 
 --add-module=../ngx\_http\_substitutions\_filter\_module
 
+make
 
+make install
 
-make 
+yum -y install gcc-c++  
 
-make install 
-
-
-
-yum install gcc g++  build-essential
-
-  
 
 
