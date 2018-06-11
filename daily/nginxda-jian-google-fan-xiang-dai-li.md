@@ -1,8 +1,4 @@
-参考：http://www.ttlsa.com/nginx/nginx-google-ngx\_http\_google\_filter\_module/
-
-
-
-
+参考：[http://www.ttlsa.com/nginx/nginx-google-ngx\_http\_google\_filter\_module/](http://www.ttlsa.com/nginx/nginx-google-ngx_http_google_filter_module/)
 
 NGINX源码：[http://nginx.org/download/](http://nginx.org/download/)
 
@@ -47,4 +43,52 @@ make
 make install
 
 yum -y install gcc-c++
+
+
+
+nginx 配置
+
+server{
+
+	server\_name search.liuyx.net;
+
+	resolver 8.8.8.8;
+
+	listen 443;
+
+	ssl on;
+
+	ssl\_certificate  /www/ssl/214765631580166.pem;
+
+	ssl\_certificate\_key /www/ssl/214765631580166.key;
+
+	location /{
+
+		google on;
+
+		google\_language zh-CN; 
+
+\#		proxy\_pass https://www.google.com;
+
+	}
+
+}
+
+server{
+
+        server\_name search.liuyx.net;
+
+	listen 80;
+
+	location / {
+
+		google on;
+
+	} 
+
+
+
+}
+
+
 
