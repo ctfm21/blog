@@ -16,11 +16,11 @@ wget [http://mirrors.linuxeye.com/oneinstack/src/openssl-1.0.2j.tar.gz](http://m
 
 \# zlib 官网:
 
-\# http://www.zlib.net/
+\# [http://www.zlib.net/](http://www.zlib.net/)
 
 \#
 
-wget
+ wget http://zlib.net/fossils/zlib-1.2.11.tar.gz
 
-"http://zlib.net/zlib-1.2.8.tar.gz"
+
 
