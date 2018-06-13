@@ -1,3 +1,5 @@
+
+
 参考：[http://www.ttlsa.com/nginx/nginx-google-ngx\_http\_google\_filter\_module/](http://www.ttlsa.com/nginx/nginx-google-ngx_http_google_filter_module/)
 
 ## 下载
@@ -18,29 +20,25 @@ wget [http://mirrors.linuxeye.com/oneinstack/src/openssl-1.0.2j.tar.gz](http://m
 
 wget [http://zlib.net/fossils/zlib-1.2.11.tar.gz](http://zlib.net/fossils/zlib-1.2.11.tar.gz)
 
-
-
 ## make配置
 
 ./configure \
 
-  --prefix=/opt/nginx\
+--prefix=/opt/nginx\
 
-  --with-pcre=../pcre-8.39 \
+--with-pcre=../pcre-8.39 \
 
-  --with-openssl=../openssl-1.0.2j \
+--with-openssl=../openssl-1.0.2j \
 
-  --with-zlib=../zlib-1.2.11 \
+--with-zlib=../zlib-1.2.11 \
 
-  --with-http\_ssl\_module \
+--with-http\_ssl\_module \
 
-  --add-module=../ngx\_http\_google\_filter\_module \
+--add-module=../ngx\_http\_google\_filter\_module \
 
-  --add-module=../ngx\_http\_substitutions\_filter\_module
+--add-module=../ngx\_http\_substitutions\_filter\_module
 
 ## 编译
-
-
 
 make
 
@@ -52,47 +50,45 @@ yum -y install gcc-c++
 
 server{
 
-```
-server\_name search.liuyx.net;
+	server\_name search.liuyx.net;
 
-resolver 8.8.8.8;
+	resolver 8.8.8.8;
 
-listen 443;
+	listen 443;
 
-ssl on;
+	ssl on;
 
-ssl\_certificate  /www/ssl/214765631580166.pem;
+	ssl\_certificate  /www/ssl/214765631580166.pem;
 
-ssl\_certificate\_key /www/ssl/214765631580166.key;
+	ssl\_certificate\_key /www/ssl/214765631580166.key;
 
-location /{
+	location /{
 
-    google on;
+		google on;
 
-    google\_language zh-CN; 
-```
+		google\_language zh-CN; 
 
-\#        proxy\_pass [https://www.google.com](https://www.google.com);
+\#		proxy\_pass https://www.google.com;
 
-```
-}
-```
+	}
 
 }
 
 server{
 
-```
-    server\_name search.liuyx.net;
+        server\_name search.liuyx.net;
 
-listen 80;
+	listen 80;
 
-location / {
+	location / {
 
-    google on;
+		root /www/google;		
 
-} 
-```
+	}
+
+	error\_page 404 https://search.liuyx.net;
 
 }
+
+
 
