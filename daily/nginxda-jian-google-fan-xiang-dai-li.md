@@ -1,3 +1,11 @@
+ 
+
+# Nginx搭建Google反向代理
+
+[https://search.liuyx.net](https://search.liuyx.net)
+
+---
+
 
 
 参考：[http://www.ttlsa.com/nginx/nginx-google-ngx\_http\_google\_filter\_module/](http://www.ttlsa.com/nginx/nginx-google-ngx_http_google_filter_module/)
@@ -50,45 +58,63 @@ yum -y install gcc-c++
 
 server{
 
-	server\_name search.liuyx.net;
+```
+server\_name search.liuyx.net;
 
-	resolver 8.8.8.8;
+resolver 8.8.8.8;
 
-	listen 443;
+listen 443;
 
-	ssl on;
+ssl on;
 
-	ssl\_certificate  /www/ssl/214765631580166.pem;
+ssl\_certificate  /www/ssl/214765631580166.pem;
 
-	ssl\_certificate\_key /www/ssl/214765631580166.key;
+ssl\_certificate\_key /www/ssl/214765631580166.key;
 
-	location /{
+location /{
 
-		google on;
+    google on;
 
-		google\_language zh-CN; 
+    google\_language zh-CN; 
+```
 
-\#		proxy\_pass https://www.google.com;
+\#        proxy\_pass [https://www.google.com](https://www.google.com);
 
-	}
+```
+}
+```
 
 }
 
 server{
 
-        server\_name search.liuyx.net;
+```
+    server\_name search.liuyx.net;
 
-	listen 80;
+listen 80;
 
-	location / {
+location / {
 
-		root /www/google;		
+    root /www/google;        
 
-	}
+}
 
-	error\_page 404 https://search.liuyx.net;
+error\_page 404 https://search.liuyx.net;
+```
 
 }
 
 
+
+**注：http强制以https访问**
+
+**/www/google/index.html内容为：**
+
+---
+
+&lt;html&gt;  
+
+&lt;meta http-equiv="refresh" content="0;url=https://search.liuyx.net"&gt;  
+
+&lt;/html&gt; 
 
