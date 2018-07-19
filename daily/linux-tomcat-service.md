@@ -1,3 +1,9 @@
+ 
+
+## Tomcat 注册为Linux服务
+
+---
+
 ## 1，service tomcat start\|stop
 
 mv catalina.sh /etc/init.d/tomcat
@@ -18,8 +24,6 @@ chkconfig --list
 ```
 
 ## 2，systemctl start\|stop\|status tomcat
-
-
 
 
 
