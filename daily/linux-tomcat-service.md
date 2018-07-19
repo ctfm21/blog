@@ -23,5 +23,9 @@ chkconfig --list
 
 ## 2，systemctl start\|stop\|status tomcat.service
 
+cd /usr/lib/systemd/system
+
+
+
 
 
