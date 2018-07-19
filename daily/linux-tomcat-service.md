@@ -37,7 +37,7 @@ vi tomcat.service
 [Unit]
 Description=Tomcat Service
 After=syslog.target network.target
- 
+
 [Service]
 Type=forking
 PIDFile=/apache-tomcat-8.5.32/tomcat.pid
@@ -50,8 +50,9 @@ PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
-
 ```
 
 sysetemctl enable tomcat
+
+
 
