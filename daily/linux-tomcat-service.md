@@ -1,5 +1,3 @@
-
-
 ## 1：service tomcat start\|stop
 
 mv catalina.sh /etc/init.d/tomcat
@@ -16,5 +14,5 @@ mv catalina.sh /etc/init.d/tomcat
 
 
 
-
+chmod 755 /etc/init.d/tomcat
 
