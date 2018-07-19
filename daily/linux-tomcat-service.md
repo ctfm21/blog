@@ -16,3 +16,5 @@ chmod 755 /etc/init.d/tomcat
 
 chkconfig --add tomcat
 
+chkconfig --list
+
