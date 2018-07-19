@@ -1,5 +1,3 @@
- 
-
 ## Tomcat 注册为Linux服务
 
 ---
@@ -23,7 +21,7 @@ chkconfig --add tomcat
 chkconfig --list
 ```
 
-## 2，systemctl start\|stop\|status tomcat
+## 2，systemctl start\|stop\|status tomcat.service
 
 
 
