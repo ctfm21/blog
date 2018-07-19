@@ -9,7 +9,6 @@ mv catalina.sh /etc/init.d/tomcat
 #description:Tomcat service
 CATALINA_HOME=/apache-tomcat-8.5.32
 #JAVA_HOME=/usr/share/java/jdk #通过 rpm 安装，存在 java不用设置
-
 ```
 
 ```
