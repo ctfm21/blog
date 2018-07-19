@@ -12,7 +12,7 @@ mv catalina.sh /etc/init.d/tomcat
 
 `#JAVA_HOME=/usr/share/java/jdk  #通过 rpm 安装，存在 java不用设置`
 
-
-
 chmod 755 /etc/init.d/tomcat
+
+chkconfig --add tomcat
 
