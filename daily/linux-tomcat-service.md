@@ -33,5 +33,25 @@ cd /usr/lib/systemd/system
 
 vi tomcat.service
 
+```
+[Unit]
+Description=Tomcat Service
+After=syslog.target network.target
+ 
+[Service]
+Type=forking
+PIDFile=/apache-tomcat-8.5.32/tomcat.pid
+ExecStart=/apache-tomcat-8.5.32/startup.sh 
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+#User=tomcat
+#Group=tomcat 
 
+[Install]
+WantedBy=multi-user.target
+
+```
+
+sysetemctl enable tomcat
 
