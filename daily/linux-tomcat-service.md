@@ -26,10 +26,12 @@ chkconfig --list
 vi bin/setenv.sh \#设置进程ID
 
 ```
-CATALINA_PID="$CATALINA_BASE/tomcat.pid" 
+CATALINA_PID="$CATALINA_BASE/tomcat.pid"
 ```
 
-`cd /usr/lib/systemd/system`
+cd /usr/lib/systemd/system
 
-`vi tomcat.service`
+vi tomcat.service
+
+
 
