@@ -9,6 +9,7 @@
     * [JIRA重定向错误](daily/jirazhong-ding-xiang-cuo-wu.md)
     * [VS命令编译](daily/vsming-ling-bian-yi.md)
     * [Nginx搭建Google反向代理](daily/nginxda-jian-google-fan-xiang-dai-li.md)
+    * [Linux Tomcat Service](daily/linux-tomcat-service.md)
   * [GitBook](gitbook.md)
     * [实践：  使用GitHub、GitBook、GitBookEditor搭建站点](gitbook/gitbookgitbookeditor.md)
     * [GitBook Editor遇到的一些问题](gitbook/gitbook-editoryu-dao-de-yi-xie-wen-ti.md)
