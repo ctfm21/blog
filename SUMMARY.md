@@ -13,6 +13,7 @@
     * [阿里云部署tomcat启动慢](daily/a-li-yun-bu-shu-tomcat-qi-dong-man.md)
     * [Dobot进行一次3D打印](daily/dobotjin-xing-yi-ci-3d-da-yin.md)
     * [TeamCity集成MySQL错误](daily/teamcityji-cheng-mysql-cuo-wu.md)
+    * [TeamCity 2017 破解及环境变量设置](daily/teamcity-2017-po-jie-ji-huan-jing-bian-liang-she-zhi.md)
   * [GitBook](gitbook.md)
     * [实践：  使用GitHub、GitBook、GitBookEditor搭建站点](gitbook/gitbookgitbookeditor.md)
     * [GitBook Editor遇到的一些问题](gitbook/gitbook-editoryu-dao-de-yi-xie-wen-ti.md)
