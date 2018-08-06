@@ -10,14 +10,14 @@
 
 ## 图形化方式安装
 
-yum grouplist
-
-yum groupinstall "X Window System"  
-yum groupinstall Desktop
-
-yum install xterm
-
-yum install xclock
+> yum grouplist
+>
+> yum groupinstall "X Window System"  
+> yum groupinstall Desktop
+>
+> yum install xterm
+>
+> yum install xclock
 
 ## Xstart报错
 
@@ -28,5 +28,7 @@ Checking monitor: must be configured to display at least 256 colors
 Some requirement checks failed. You must fulfill these requirements before
 ```
 
-xstart中使用oracle用户登录,执行"runInstaller"
+> xstart中使用oracle用户登录,执行"runInstaller"
+
+
 
