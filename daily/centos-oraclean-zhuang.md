@@ -2,7 +2,7 @@
 
 ---
 
-[https://wiki.centos.org/HowTos/Oracle12onCentos7](https://wiki.centos.org/HowTos/Oracle12onCentos7)
+参考 ： [https://wiki.centos.org/HowTos/Oracle12onCentos7](https://wiki.centos.org/HowTos/Oracle12onCentos7)
 
 yum grouplist
 
