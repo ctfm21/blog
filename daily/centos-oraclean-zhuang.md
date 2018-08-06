@@ -498,7 +498,11 @@ Linux中没有图形化的浏览器，使用“_**https:**_//192.168.0.70:1158/e
 
 > $ORACLEHOME\admin\product\11.2.0\dbhome\_1\NETWORK\ADMIN\listener.ora
 
-
+> lsnrctl status
+>
+>  lsnrctl start
+>
+> lsnrctl stop
 
 
 
