@@ -36,5 +36,21 @@ PS：可能是我虚拟机性能太差，也可能是XStart本身很慢，UI响�
 
 ![](/assets/随笔/oracle_nmhs)
 
+> 安装Oracle11g报错：  
+> Error in invoking target 'agent nmhs' of makefile   
+> 解决方法：  
+> cd $ORACLE\_HOME/sysman/lib  
+> vi ins\_emagent.mk  
+> **修改此处如下：**  
+> \#===========================
+>
+> \#  emdctl
+>
+> \#===========================  
+> $\(SYSMANBIN\)emdctl:  
+> 　　$\(MK\_EMAGENT\_NMECTL\) -lnnz11
+>
+> \*\*\*\*\*\*\*VICTORY LOVES PREPARATION\*\*\*\*\*\*\*
+
 
 
