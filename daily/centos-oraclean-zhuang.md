@@ -515,3 +515,21 @@ shutdown immediate；
 
 
 
+## The listener supports no services
+
+Listener Parameter File   /u01/app/oracle/product/11.2.0/dbhome\_1/network/admin/listener.ora
+
+Listener Log File         /u01/app/oracle/diag/tnslsnr/codequality\_agent/listener/alert/log.xml
+
+Listening Endpoints Summary...
+
+  \(DESCRIPTION=\(ADDRESS=\(PROTOCOL=ipc\)\(KEY=EXTPROC1521\)\)\)
+
+  \(DESCRIPTION=\(ADDRESS=\(PROTOCOL=tcp\)\(HOST=192.168.0.70\)\(PORT=1521\)\)\)
+
+The listener supports no services
+
+The command completed successfully
+
+
+
