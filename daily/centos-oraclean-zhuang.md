@@ -20,7 +20,5 @@ Checking monitor: must be configured to display at least 256 colors
 Some requirement checks failed. You must fulfill these requirements before
 ```
 
-xstart中使用oracle用户登录
-
-
+xstart中使用oracle用户登录,使用"runInstaller"
 
