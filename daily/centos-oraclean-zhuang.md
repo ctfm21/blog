@@ -30,5 +30,5 @@ Some requirement checks failed. You must fulfill these requirements before
 
 > xstart中使用oracle用户登录,执行"runInstaller"
 
-
+![](/assets/随笔/oracle_install.png)
 
