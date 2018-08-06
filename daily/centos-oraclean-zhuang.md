@@ -498,6 +498,7 @@ Linux中没有图形化的浏览器，使用“_**https:**_//192.168.0.70:1158/e
 conn /as sysdba
 startup
 shutdown
+shutdown immediate；
 ```
 
 ## 启动监听
