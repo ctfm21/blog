@@ -513,8 +513,6 @@ shutdown immediate；
 >
 > lsnrctl stop
 
-
-
 ## The listener supports no services
 
 Listener Parameter File   /u01/app/oracle/product/11.2.0/dbhome\_1/network/admin/listener.ora
@@ -523,13 +521,31 @@ Listener Log File         /u01/app/oracle/diag/tnslsnr/codequality\_agent/listen
 
 Listening Endpoints Summary...
 
-  \(DESCRIPTION=\(ADDRESS=\(PROTOCOL=ipc\)\(KEY=EXTPROC1521\)\)\)
+\(DESCRIPTION=\(ADDRESS=\(PROTOCOL=ipc\)\(KEY=EXTPROC1521\)\)\)
 
-  \(DESCRIPTION=\(ADDRESS=\(PROTOCOL=tcp\)\(HOST=192.168.0.70\)\(PORT=1521\)\)\)
+\(DESCRIPTION=\(ADDRESS=\(PROTOCOL=tcp\)\(HOST=192.168.0.70\)\(PORT=1521\)\)\)
 
 The listener supports no services
 
 The command completed successfully
+
+
+
+修改listener.ora，添加以下内容，重启listner
+
+> SID\_LIST\_LISTENER =
+>
+> \(SID\_LIST =
+>
+>  \(SID\_DESC =
+>
+>  \(GLOBAL\_DBNAME = orcl\)
+>
+>  \(SID\_NAME = orcl\)
+>
+>  \)
+>
+> \)
 
 
 
