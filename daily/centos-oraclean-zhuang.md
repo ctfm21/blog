@@ -6,7 +6,7 @@
 
 [https://wiki.centos.org/HowTos/Oracle12onCentos7](https://wiki.centos.org/HowTos/Oracle12onCentos7)
 
-注：u01表示程序安装目录,u02表示数据库文件目录
+> 注：u01表示程序安装目录,u02表示数据库文件目录
 
 ## 图形化方式安装
 
