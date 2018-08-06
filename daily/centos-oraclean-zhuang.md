@@ -15,9 +15,7 @@ yum install xterm
 
 yum install xclock
 
-
-
-Xstart报错
+## Xstart报错
 
 ```
 Checking monitor: must be configured to display at least 256 colors
