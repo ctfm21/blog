@@ -51,9 +51,11 @@ PS：可能是我虚拟机性能太差，也可能是XStart本身很慢，UI响�
 
 ![](/assets/随笔/oracle_emdctl.png)
 
-
-
 好坑，等了半小时，，一点Help发现这啥？？
 
 ![](/assets/随笔/oracle_finish.png)
+
+Linux中没有图形化的浏览器，使用“_**https:**_//192.168.0.70:1158/em” ，注意用https协议访问
+
+
 
