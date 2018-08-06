@@ -492,15 +492,15 @@ Linux中没有图形化的浏览器，使用“_**https:**_//192.168.0.70:1158/e
 
 安装成功后，sqlplus等不在环境变量中， 请参照教程设置环境变量
 
-## 启动服务
+## 启动监听
 
 修改listener配置，将里面localhost入成相应IP
 
 > $ORACLEHOME\admin\product\11.2.0\dbhome\_1\NETWORK\ADMIN\listener.ora
-
+>
 > lsnrctl status
 >
->  lsnrctl start
+> lsnrctl start
 >
 > lsnrctl stop
 
