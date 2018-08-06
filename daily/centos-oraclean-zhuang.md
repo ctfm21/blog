@@ -6,13 +6,13 @@
 
 [https://wiki.centos.org/HowTos/Oracle12onCentos7](https://wiki.centos.org/HowTos/Oracle12onCentos7)
 
+12和11 安装方式一样，就是下载的文件不一样。
+
 ## 1. Introduction {#head-172a15fb5e1115fcae130f7ac01149a35fde01d1}
 
 This guide presents how to deploy Oracle Database 12c \(12.1.0.2.0\) on CentOS 7.1 \(64-bit\) using quick installation features.
 
 Reference System:
-
-
 
 ```
 [root@centos7 ~]# hostnamectl
@@ -36,27 +36,19 @@ Reference System:
             Kernel: Linux 3.10.0-229.11.1.el7.x86_64
 
       Architecture: x86_64
-
 ```
-
-
 
 ## 2. Prerequisites {#head-4d0a4cca6a242121dbb8da76953982a1cfdbcafb}
 
 After a successful OS installation, verify the hostname and register it in your DNS. Alternatively add your hostname/IP to the_/etc/hosts_.
 
-
-
 ```
 [root@centos7 ~]# cat /etc/hostname
 
 centos7.example.com
-
 ```
 
 Leave the SELinux in enforcing mode as well as the firewall enabled
-
-
 
 ```
 [root@centos7 ~]# sestatus
@@ -78,38 +70,27 @@ Policy MLS status:              enabled
 Policy deny_unknown status:     allowed
 
 Max kernel policy version:      28
-
 ```
-
-
 
 ```
 [root@centos7 ~]# firewall-cmd --state
 
 running
-
 ```
 
 Update the CentOS system with the latest packages
 
-
-
 ```
 [root@centos7 ~]# yum update -y
-
 ```
 
 Download the Oracle Database 12c for Linux x86-64 software:
 
 [http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html)
 
-
-
 ## 3. Installation Steps {#head-4f82c3cc1fb805f94f1f8222621999111b0c2f4f}
 
 Create required OS users and groups for Oracle Database.
-
-
 
 ```
 [root@centos7 ~]# groupadd oinstall
@@ -119,12 +100,9 @@ Create required OS users and groups for Oracle Database.
 [root@centos7 ~]# useradd -g oinstall -G dba oracle
 
 [root@centos7 ~]# passwd oracle
-
 ```
 
 Add the following kernel parameters to the_/etc/sysctl.conf_
-
-
 
 ```
 fs.aio-max-nr = 1048576
@@ -148,23 +126,17 @@ net.core.rmem_max = 4194304
 net.core.wmem_default = 262144
 
 net.core.wmem_max = 1048586
-
 ```
 
 Check and apply the new values.
-
-
 
 ```
 [root@centos7 ~]# sysctl -p
 
 [root@centos7 ~]# sysctl -a
-
 ```
 
 Specify limits for oracle user in the_/etc/security/limits.conf_
-
-
 
 ```
 oracle soft nproc 2047
@@ -174,12 +146,9 @@ oracle hard nproc 16384
 oracle soft nofile 1024
 
 oracle hard nofile 65536
-
 ```
 
-Extract the zipped Oracle Database Software archives \(linuxamd64\_12102\_database\_1of2.zip, linuxamd64\_12102\_database\_2of2.zip\) to the_/stage_folder.
-
-
+Extract the zipped Oracle Database Software archives \(linuxamd64\_12102\_database\_1of2.zip, linuxamd64\_12102\_database\_2of2.zip\) to the\_/stage\_folder.
 
 ```
 [root@centos7 ~]# yum install -y zip unzip
@@ -187,21 +156,15 @@ Extract the zipped Oracle Database Software archives \(linuxamd64\_12102\_databa
 [root@centos7 ~]# unzip linuxamd64_12102_database_1of2.zip -d /stage/
 
 [root@centos7 ~]# unzip linuxamd64_12102_database_2of2.zip -d /stage/
-
 ```
 
 Modify permissions on_/stage_
 
-
-
 ```
 [root@centos7 ~]# chown -R oracle:oinstall /stage/
-
 ```
 
-Create_/u01_directory for Oracle software and_/u02_for database files.
-
-
+Create_/u01\_directory for Oracle software and_/u02\_for database files.
 
 ```
 [root@centos7 ~]# mkdir /u01
@@ -219,12 +182,9 @@ Create_/u01_directory for Oracle software and_/u02_for database files.
 [root@centos7 ~]# chmod g+s /u01
 
 [root@centos7 ~]# chmod g+s /u02
-
 ```
 
 Install required packages:
-
-
 
 ```
 [root@centos7 ~]# yum install -y binutils.x86_64 compat-libcap1.x86_64 gcc.x86_64 gcc-c++.x86_64 glibc.i686 glibc.x86_64 \
@@ -234,16 +194,12 @@ glibc-devel.i686 glibc-devel.x86_64 ksh compat-libstdc++-33 libaio.i686 libaio.x
 libgcc.i686 libgcc.x86_64 libstdc++.i686 libstdc++.x86_64 libstdc++-devel.i686 libstdc++-devel.x86_64 libXi.i686 libXi.x86_64 \
 
 libXtst.i686 libXtst.x86_64 make.x86_64 sysstat.x86_64
-
 ```
 
-Also install the_"X Window System"_package group.
-
-
+Also install the\_"X Window System"\_package group.
 
 ```
 [root@centos7 ~]# yum groupinstall -y "X Window System"
-
 ```
 
 Because the Oracle installation requires GUI, there are two simple ways how to provide it.
@@ -252,11 +208,8 @@ Solution 1.
 
 Login remotely from a graphical Linux machine via SSH.
 
-
-
 ```
 ssh -X oracle@centos7.example.com
-
 ```
 
 Solution 2.
@@ -269,16 +222,11 @@ The following article describes how to install Xming on Windows systems.
 
 Use a solution above to login as "oracle" user and run the Oracle Installer:
 
-
-
 ```
 [oracle@centos7 ~]$ /stage/database/runInstaller
 
 Starting Oracle Universal Installer...
-
 ```
-
-
 
 ## 4. Oracle Installer Screens {#head-539cfe4ae2bd6f126de557cbfc5d7d7a99826c04}
 
@@ -340,8 +288,6 @@ Final chance to edit any installation features. Click**Install**.
 
 When a request window appears, login as root and execute two scripts:
 
-
-
 ```
 [root@centos7 ~]# /u01/app/oraInventory/orainstRoot.sh
 
@@ -354,10 +300,7 @@ Removing read,write,execute permissions for world.
 Changing groupname of /u01/app/oraInventory to oinstall.
 
 The execution of the script is complete.
-
 ```
-
-
 
 ```
 [root@centos7 ~]# /u01/app/oracle/product/12.1.0/dbhome_1/root.sh
@@ -391,7 +334,6 @@ Finished running generic part of root script.
 Now product-specific root actions will be performed.
 
 You can follow the installation in a separated window.
-
 ```
 
 Both scripts must run as root.
@@ -412,17 +354,11 @@ The last screen inform that the installation is done and displays the Oracle Ent
 
 Click OK to close the Installer.
 
-
-
 ## 5. Post Installation Tasks {#head-21bcdce092464f30ebcb47cf863ad7fb36456b23}
-
-
 
 ### 5.1. Firewall {#head-57445ee9a854dba4aa58c05c3f1141664ea78395}
 
 Login as root and verify the active zones
-
-
 
 ```
 [root@centos7 ~]# firewall-cmd --get-active-zones
@@ -430,12 +366,9 @@ Login as root and verify the active zones
 public
 
   interfaces: eth0
-
 ```
 
 Open the related ports
-
-
 
 ```
 [root@centos7 ~]# firewall-cmd --zone=public --add-port=1521/tcp --add-port=5500/tcp --add-port=5520/tcp --add-port=3938/tcp \ 
@@ -443,34 +376,23 @@ Open the related ports
 --permanent
 
 success
-
 ```
-
-
 
 ```
 [root@centos7 ~]# firewall-cmd --reload
 
 success
-
 ```
-
-
 
 ```
 [root@centos7 ~]# firewall-cmd --list-ports
 
 1521/tcp 3938/tcp 5500/tcp 5520/tcp
-
 ```
-
-
 
 ### 5.2. Oracle Environment {#head-73bfab70d9f2c0082013e8827573f7da8ca8a22f}
 
 Login as oracle user and add the following values to the_/home/oracle/.bash\_profile_
-
-
 
 ```
 TMPDIR=$TMP; export TMPDIR
@@ -486,25 +408,17 @@ PATH=$ORACLE_HOME/bin:$PATH; export PATH
 LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib:/usr/lib64; export LD_LIBRARY_PATH
 
 CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib; export CLASSPATH
-
 ```
 
 Reload the bash\_profile to apply the new settings:
 
-
-
 ```
 [oracle@centos7 ~]$ . .bash_profile
-
 ```
-
-
 
 ### 5.3. Login to the database {#head-62eaac1d1449ec1f91c0c1214d7465bde70a98f6}
 
 Finally login to the database:
-
-
 
 ```
 [oracle@centos7 ~]$ sqlplus system@orcl
