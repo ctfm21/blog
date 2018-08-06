@@ -32,3 +32,7 @@ Some requirement checks failed. You must fulfill these requirements before
 
 ![](/assets/随笔/oracle_install.png)
 
+
+
+PS：可能是我虚拟机性能太差，也可能是XStart本身很慢，UI响应巨慢！！ 在输入路径时，建议直接从剪切板中复制
+
