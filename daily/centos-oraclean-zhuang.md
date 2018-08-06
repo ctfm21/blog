@@ -4,6 +4,10 @@
 
 参考 ： [https://wiki.centos.org/HowTos/Oracle12onCentos7](https://wiki.centos.org/HowTos/Oracle12onCentos7)
 
+
+
+## 图形化方式安装
+
 yum grouplist
 
 yum groupinstall "X Window System"  
