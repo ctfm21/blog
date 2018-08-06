@@ -17,13 +17,5 @@ yum install xclock
 
 
 
-Checking monitor: must be configured to display at least 256 colors
-
-    &gt;&gt;&gt; Could not execute auto check for display colors using command /usr/bin/xdpyinfo. Check if the DISPLAY variable is set.    Failed &lt;&lt;&lt;&lt;
-
-
-
-Some requirement checks failed. You must fulfill these requirements before
-
 
 
