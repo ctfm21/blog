@@ -6,33 +6,27 @@
 
 Cancel Build不行，甚至重启TeamCity Server和Agent也不行，日志如下：
 
-
-
-> Status:	 Canceled \(Step 3/3\)	Agent:	Win192.168.0.58
+> Status:     Canceled \(Step 3/3\)    Agent:    Win192.168.0.58
 >
-> Progress:	
+> Progress:
 >
 > 49m:14s
 >
 > 49m:14s
 >
->   	Triggered by:	you on 07 Aug 18 19:03
+> ```
+>   Triggered by:    you on 07 Aug 18 19:03
+> ```
 >
-> Thread dump:	View thread dump
+> Thread dump:    View thread dump
 >
-> Running step:	Step 3/3: Starting upload via SCP to \[product/zeek/OnlineHealthCard\] on host \[192.168.0.5:22\]
-
-
-
-
+> Running step:    Step 3/3: Starting upload via SCP to \[product/zeek/OnlineHealthCard\] on host \[192.168.0.5:22\]
 
 ## 解决方案
-
-
 
 1：停止Agent 服务
 
 2：登录Agent，删除构建目录 "C:\TeamCity\buildAgent\work\54a179beff4162b4"
 
-
+3：启动Agent服务
 
