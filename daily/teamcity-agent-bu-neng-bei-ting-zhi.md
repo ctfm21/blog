@@ -34,9 +34,9 @@ Cancel Build不行，甚至重启TeamCity Server和Agent也不行，日志如下
 
 The solution for us is to
 
-*  Stop Team City server service
-*  Manually edit database table dbo.running
-*  Start Team City server service
+* Stop Team City server service
+* Manually edit database table dbo.running
+* Start Team City server service
 
 
 
