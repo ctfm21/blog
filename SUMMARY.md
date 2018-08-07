@@ -22,4 +22,5 @@
     * [TeamCity集成MySQL错误](daily/teamcityji-cheng-mysql-cuo-wu.md)
     * [TeamCity 2017 破解及环境变量设置](daily/teamcity-2017-po-jie-ji-huan-jing-bian-liang-she-zhi.md)
     * [TeamCity Agent 不能被停止](daily/teamcity-agent-bu-neng-bei-ting-zhi.md)
+    * Sonar /buildAgent/work/b3d287c9f71b20db
 
