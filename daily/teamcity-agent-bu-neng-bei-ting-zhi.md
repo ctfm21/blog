@@ -24,27 +24,19 @@ Cancel Build不行，甚至重启TeamCity Server和Agent也不行，日志如下
 
 ## 解决方案
 
-1：停止Agent 服务
+1：停止TeamCity Server
 
-2：登录Agent，删除构建目录 "C:\TeamCity\buildAgent\work\54a179beff4162b4"
+2：删除TeamCity数据库中running下的构建记录
 
-3：启动Agent服务
+3：重启服务
 
+[https://youtrack.jetbrains.net/issue/TW-3154](https://youtrack.jetbrains.net/issue/TW-3154)
 
+The solution for us is to
 
-
-
-参考：[https://teamcity-support.jetbrains.com/hc/en-us/community/posts/115000609730-Build-hang-after-cancelation-can-not-stop](https://teamcity-support.jetbrains.com/hc/en-us/community/posts/115000609730-Build-hang-after-cancelation-can-not-stop)
-
-
-
-Issue has been resolved, below solution:
-
-1. Stop "TeamCity Build Agent Service"
-
-2. Delete directory C:\BuildAgent\work\8d9d402069ed42b8  \(it was teamcity.build.checkoutDir for impacted build\)
-
-3. start "TeamCity Build Agent Service"
+*  Stop Team City server service
+*  Manually edit database table dbo.running
+*  Start Team City server service
 
 
 
