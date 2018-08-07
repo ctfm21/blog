@@ -14,7 +14,6 @@
     * [Dobot进行一次3D打印](daily/dobotjin-xing-yi-ci-3d-da-yin.md)
     * [CentOS Oracle安装](daily/centos-oraclean-zhuang.md)
     * [Oracle导入导出](daily/oracledao-ru-dao-chu.md)
-    * [TeamCity Agent 不能被停止](daily/teamcity-agent-bu-neng-bei-ting-zhi.md)
   * [GitBook](gitbook.md)
     * [实践：  使用GitHub、GitBook、GitBookEditor搭建站点](gitbook/gitbookgitbookeditor.md)
     * [GitBook Editor遇到的一些问题](gitbook/gitbook-editoryu-dao-de-yi-xie-wen-ti.md)
@@ -22,4 +21,5 @@
   * [TeamCity持续集成](teamcitychi-xu-ji-cheng.md)
     * [TeamCity集成MySQL错误](daily/teamcityji-cheng-mysql-cuo-wu.md)
     * [TeamCity 2017 破解及环境变量设置](daily/teamcity-2017-po-jie-ji-huan-jing-bian-liang-she-zhi.md)
+    * [TeamCity Agent 不能被停止](daily/teamcity-agent-bu-neng-bei-ting-zhi.md)
 
