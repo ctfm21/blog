@@ -13,6 +13,7 @@
     * [阿里云部署tomcat启动慢](daily/a-li-yun-bu-shu-tomcat-qi-dong-man.md)
     * [Dobot进行一次3D打印](daily/dobotjin-xing-yi-ci-3d-da-yin.md)
     * [CentOS Oracle安装](daily/centos-oraclean-zhuang.md)
+    * [Oracle导入导出](daily/oracledao-ru-dao-chu.md)
   * [GitBook](gitbook.md)
     * [实践：  使用GitHub、GitBook、GitBookEditor搭建站点](gitbook/gitbookgitbookeditor.md)
     * [GitBook Editor遇到的一些问题](gitbook/gitbook-editoryu-dao-de-yi-xie-wen-ti.md)

@@ -529,21 +529,19 @@ The listener supports no services
 
 The command completed successfully
 
-
-
 修改listener.ora，添加以下内容，重启listner
 
 > SID\_LIST\_LISTENER =
 >
 > \(SID\_LIST =
 >
->  \(SID\_DESC =
+> \(SID\_DESC =
 >
->  \(GLOBAL\_DBNAME = orcl\)
+> \(GLOBAL\_DBNAME = orcl\)
 >
->  \(SID\_NAME = orcl\)
+> \(SID\_NAME = orcl\)
 >
->  \)
+> \)
 >
 > \)
 
