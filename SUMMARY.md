@@ -24,4 +24,5 @@
     * [TeamCity Agent 不能被停止](daily/teamcity-agent-bu-neng-bei-ting-zhi.md)
     * Sonar /buildAgent/work/b3d287c9f71b20db
     * [TeamCItyMySQL SVN中文日志乱码](daily/teamcity+mysql-svnzhong-wen-ri-zhi-luan-ma.md)
+    * [TeamCIty+MySQL SVN中文日志乱码](daily/teamcity-mysql-svnzhong-wen-ri-zhi-luan-ma.md)
 
