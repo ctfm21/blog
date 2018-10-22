@@ -2,8 +2,6 @@
 
 ---
 
-
-
 安装
 
 yum install nginx
