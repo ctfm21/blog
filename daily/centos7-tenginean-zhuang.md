@@ -52,5 +52,17 @@ WantedBy=multi-user.target
 systemctl enable nginx
 ```
 
+* 多节点配置
+
+> upstream appserver{
+>
+> 	server  ip1:8080;
+>
+> 	server ip2:8080;
+>
+> 	check interval=3000 rise=2 fall=5 timeout=1000 type=http;
+>
+> }
+
 
 
