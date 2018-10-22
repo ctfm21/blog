@@ -8,19 +8,14 @@ systemctl enable nginx.service
 systemctl status nginx.service  
 systemctl restart nginx.service
 
-
-
-> http {
->
->     include       mime.types;
->
->     include /etc/tengine/conf.d/\*.conf;
->
->     default\_type  application/octet-stream;
->
->      client\_max\_body\_size 20m;
->
-> }
+```
+http {
+    include       mime.types;
+    include /etc/tengine/conf.d/*.conf;
+    default_type  application/octet-stream;
+     client_max_body_size 20m;
+}
+```
 
 /etc/nginx/nginx.conf
 
