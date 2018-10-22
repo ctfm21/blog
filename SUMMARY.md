@@ -17,6 +17,7 @@
     * [OpenVPN配置文件合并为1个](daily/openvpnpei-zhi-wen-jian-he-bing-wei-1-ge.md)
     * [Linux固定IP](daily/linuxgu-ding-ip.md)
     * [FileBeat No paths were defined for input accessing config](daily/filebeat-no-paths-were-defined-for-input-accessing-config.md)
+    * [CentOS7 Tengine安装](daily/centos7-tenginean-zhuang.md)
   * [GitBook](gitbook.md)
     * [实践：  使用GitHub、GitBook、GitBookEditor搭建站点](gitbook/gitbookgitbookeditor.md)
     * [GitBook Editor遇到的一些问题](gitbook/gitbook-editoryu-dao-de-yi-xie-wen-ti.md)
