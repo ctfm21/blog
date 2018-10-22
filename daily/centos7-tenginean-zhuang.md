@@ -18,10 +18,31 @@ yum install pcre pcre-devel
 yum install -y openssl openssl-devel
 
 make & make install
-
 ```
 
 安装后在: /usr/local/nginx中
+
+* 注册为系统服务 通过systemctl管理
+
+vi /usr/lib/systemd/system/nginx.service
+
+```
+[Unit]
+Description=The nginx HTTP and reverse proxy server
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/usr/local/nginx/logs/nginx.pid
+ExecStartPre=/usr/local/nginx/sbin/nginx -t
+ExecStart=/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+```
 
 
 
