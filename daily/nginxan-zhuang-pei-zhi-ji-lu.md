@@ -8,6 +8,20 @@ systemctl enable nginx.service
 systemctl status nginx.service  
 systemctl restart nginx.service
 
+
+
+> http {
+>
+>     include       mime.types;
+>
+>     include /etc/tengine/conf.d/\*.conf;
+>
+>     default\_type  application/octet-stream;
+>
+>      client\_max\_body\_size 20m;
+>
+> }
+
 /etc/nginx/nginx.conf
 
 配置
@@ -35,8 +49,6 @@ server {
     server\_name ww.centos.bz;  
     rewrite ^\(.\*\) [https://$server\_name$1](https://$server_name$1) permanent;  
 }
-
-
 
 反向代理
 
@@ -102,10 +114,10 @@ server{
     }  
     location /webmanager{  
         proxy\_pass [http://local\_tomcat/webmanager](http://local_tomcat/webmanager);  
-        proxy\_redirect             off;   
-        proxy\_set\_header           Host $host;   
-            proxy\_set\_header           X-Real-IP $remote\_addr;   
-            proxy\_set\_header           X-Forwarded-For $proxy\_add\_x\_forwarded\_for;   
+        proxy\_redirect             off;  
+        proxy\_set\_header           Host $host;  
+            proxy\_set\_header           X-Real-IP $remote\_addr;  
+            proxy\_set\_header           X-Forwarded-For $proxy\_add\_x\_forwarded\_for;  
     }  
 }
 
@@ -133,7 +145,7 @@ location /{
 
 }
 
-使用Web登录验证   
+使用Web登录验证  
     server{  
         listen 80;  
         server\_name 127.0.0.1;  
@@ -142,7 +154,7 @@ location /{
         location /{  
             root D:/www/;  
             auth\_basic "liuyixintest";  
-            auth\_basic\_user\_file D:/www/pwd.db;   
+            auth\_basic\_user\_file D:/www/pwd.db;  
         }  
     }
 
