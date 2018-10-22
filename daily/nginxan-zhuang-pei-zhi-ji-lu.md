@@ -153,3 +153,33 @@ location /{
         }  
     }
 
+
+
+Https证书
+
+```
+
+Https证书
+server{
+	listen 443;
+	server_name www.xxx.com;
+	ssl on;
+	ssl_certificate /www/https_cert/213980415590699.pem;
+	ssl_certificate_key /www/213980415590699.key;
+	ssl_session_timeout 5m;
+	ssl_protocols SSLv2 SSLv3 TLSv1;
+	ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP;
+	ssl_prefer_server_ciphers on;
+	location / {
+		proxy_pass http://local_tomcat;
+		proxy_set_header           Host $host; 
+	        proxy_set_header           X-Real-IP $remote_addr; 
+        	proxy_set_header           X-Forwarded-For $proxy_add_x_forwarded_for; 
+	} 
+
+}
+
+```
+
+
+
