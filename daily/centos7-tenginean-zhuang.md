@@ -22,9 +22,13 @@ make & make install
 
 安装后在: /usr/local/nginx中
 
+```
+ln -s /usr/local/nginx/sbin/nginx /usr/bin
+```
+
 * 注册为系统服务 通过systemctl管理
 
-vi /usr/lib/systemd/system/nginx.service
+`vi /usr/lib/systemd/system/nginx.service`
 
 ```
 [Unit]
@@ -42,6 +46,10 @@ PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
+```
+
+```
+systemctl enable nginx
 ```
 
 
