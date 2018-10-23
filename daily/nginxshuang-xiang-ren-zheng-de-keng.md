@@ -2,7 +2,7 @@
 
 ---
 
-配置参见：
+生成证书参见：
 
 [https://www.cnblogs.com/UnGeek/p/6049004.html](https://www.cnblogs.com/UnGeek/p/6049004.html)
 
