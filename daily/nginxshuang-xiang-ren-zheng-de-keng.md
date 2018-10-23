@@ -35,7 +35,7 @@ CA 是权威机构才能做的，并且如果该机构达不到安全标准就�
 Common Name 可以随意填写  
 ；其他需要填写的信息为了避免有误，都填写 . 吧
 
-**服务器端证书      
+**服务器端证书        
 **
 
 制作服务端私钥
@@ -50,12 +50,9 @@ Common Name 可以随意填写
 
 注意：
 
-* ~~Common Name 得填写为访问服务时的域名，这里我们用 usb.dev 下面 NGINX 配置会用到  
-  ~~
+* ~~Common Name 得填写为访问服务时的域名，这里我们用 usb.dev 下面 NGINX 配置会用到~~
 
-* \_\*\*测试过程发现，直接写域名会报错。Common Name 这里一定要写，比如：“\[\[[https://api.test.com”，别写"api.test.com\]\(https://api.test.com”，别写"api.test.com\]\(https://api.test.com”，别写"api.test.com\]\(https://api.test.com”，别写"api.test.com\)\](https://api.test.com”，别写"api.test.com]%28https://api.test.com”，别写"api.test.com]%28https://api.test.com”，别写"api.test.com]%28https://api.test.com”，别写"api.test.com%29\)\)"
-
-  ---
+* **测试过程发现，直接写域名会报错。Common Name要写带 https的路径，应写：“https://api.test.com”，而不是“api.test.com”**
 
 * 其他需要填写的信息为了避免有误，都填写 . 吧（为了和 CA 根证书匹配）
 
