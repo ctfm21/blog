@@ -19,6 +19,7 @@
     * [FileBeat No paths were defined for input accessing config](daily/filebeat-no-paths-were-defined-for-input-accessing-config.md)
     * [CentOS7 Tengine安装](daily/centos7-tenginean-zhuang.md)
     * [NGINX安装配置记录](daily/nginxan-zhuang-pei-zhi-ji-lu.md)
+    * [NGINX双向认证的坑](daily/nginxshuang-xiang-ren-zheng-de-keng.md)
   * [GitBook](gitbook.md)
     * [实践：  使用GitHub、GitBook、GitBookEditor搭建站点](gitbook/gitbookgitbookeditor.md)
     * [GitBook Editor遇到的一些问题](gitbook/gitbook-editoryu-dao-de-yi-xie-wen-ti.md)
