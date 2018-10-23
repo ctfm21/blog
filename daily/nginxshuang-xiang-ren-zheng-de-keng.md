@@ -2,6 +2,14 @@
 
 ---
 
+配置参见：[https://www.cnblogs.com/UnGeek/p/6049004.html](https://www.cnblogs.com/UnGeek/p/6049004.html)
+
+
+
+
+
+
+
 使用命令
 
 `curl --insecure --key ./client.key --cert ./client.crt "https://api.test.com" -v`
@@ -15,18 +23,18 @@
 * Initializing NSS with certpath: sql:/etc/pki/nssdb
 * skipping SSL peer certificate verification
 * NSS: client certificate from file
-* 	subject: E=jz,CN=api.test.com,OU=jz,O=jz,L=jz,ST=jz,C=jz
-* 	start date: Oct 22 16:42:27 2018 GMT
-* 	expire date: Oct 19 16:42:27 2028 GMT
-* 	common name: api.test.com
-* 	issuer: E=jz,CN=api.test.com,OU=jz,O=jz,L=jz,ST=jz,C=jz
+*     subject: E=jz,CN=api.test.com,OU=jz,O=jz,L=jz,ST=jz,C=jz
+*     start date: Oct 22 16:42:27 2018 GMT
+*     expire date: Oct 19 16:42:27 2028 GMT
+*     common name: api.test.com
+*     issuer: E=jz,CN=api.test.com,OU=jz,O=jz,L=jz,ST=jz,C=jz
 * SSL connection using TLS_RSA_WITH_AES_256_CBC_SHA
 * Server certificate:
-* 	subject: E=jz,CN=api.test.com,OU=jz,O=jz,L=jz,ST=jz,C=jz
-* 	start date: Oct 22 16:41:54 2018 GMT
-* 	expire date: Oct 19 16:41:54 2028 GMT
-* 	common name: api.test.com
-* 	issuer: E=jz,CN=api.test.com,OU=jz,O=jz,L=jz,ST=jz,C=jz
+*     subject: E=jz,CN=api.test.com,OU=jz,O=jz,L=jz,ST=jz,C=jz
+*     start date: Oct 22 16:41:54 2018 GMT
+*     expire date: Oct 19 16:41:54 2028 GMT
+*     common name: api.test.com
+*     issuer: E=jz,CN=api.test.com,OU=jz,O=jz,L=jz,ST=jz,C=jz
 > GET / HTTP/1.1
 > User-Agent: curl/7.29.0
 > Host: api.test.com
